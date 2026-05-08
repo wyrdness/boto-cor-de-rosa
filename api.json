@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/boto-cor-de-rosa",
     "maintainers": [
       {
@@ -16,72 +16,155 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "boto-cor-de-rosa",
-    "name": "Boto Cor-de-Rosa (Pink River Dolphin Shapeshifter)",
-    "aliases": [],
-    "category": "OF_AMAZONIAN_ENCHANTED_BEINGS",
-    "subcategory": "Unknown",
+    "name": "Boto Cor-de-Rosa",
+    "aliases": [
+      { "name": "Boto", "language": "Portuguese", "region": "Brazil" },
+      { "name": "Boto Encantado", "language": "Portuguese", "meaning": "'Enchanted dolphin'" },
+      { "name": "Bufeo Colorado", "language": "Spanish", "region": "Peruvian and Colombian Amazon" },
+      { "name": "Tonina", "language": "Spanish", "region": "Bolivian and Colombian Amazon" }
+    ],
+    "category": "SHAPESHIFTER",
+    "subcategory": "Aquatic shapeshifter / encantado",
     "tags": [
+      "amazon",
+      "river-dolphin",
+      "shapeshifter",
+      "encantado",
       "folklore",
-      "mythology"
+      "south-america",
+      "brazil",
+      "tupi-guarani"
     ],
     "status": "documented",
     "description": {
-      "summary": "The Boto Cor-de-Rosa (pink river dolphin) represents one of the Amazon Basin's most enduring and complex folklore traditions, weaving together observations of real cetacean behavior, cultural explanations for social phenomena, and deeply rooted beliefs about the relationship between humans and the aquatic realm.",
-      "full": "The Boto Cor-de-Rosa (pink river dolphin) represents one of the Amazon Basin's most enduring and complex folklore traditions, weaving together observations of real cetacean behavior, cultural explanations for social phenomena, and deeply rooted beliefs about the relationship between humans and the aquatic realm. Unlike the broader category of *encantados* (enchanted beings), the boto mythology focuses specifically on the biology, behavior, and perceived supernatural qualities of the Amazon river dolphin (*Inia geoffrensis*), creating a unique intersection of natural history and supernatural narrative. This shapeshifting entity, said to transform from pink dolphin to handsome young man under cover of darkness, serves multiple cultural functions in Amazonian societies: explaining paternity outside marriage, enforcing behavioral norms around water safety and sexual conduct, and expressing the complex relationship between riverine communities and their aquatic environment. The boto legend persists into the modern era, influencing conservation attitudes, tourism, and regional identity throughout the Brazilian Amazon."
+      "summary": "In Amazonian folklore, the Boto Cor-de-Rosa — the pink Amazon river dolphin (Inia geoffrensis) — is said to transform at night into a handsome man who seduces women at riverside parties before returning to the water at dawn.",
+      "full": "The Boto Cor-de-Rosa, or pink river dolphin, is a shapeshifting being of Amazonian folklore centered on the Amazon river dolphin Inia geoffrensis. According to traditions held by riverine communities along the Amazon and its tributaries — particularly in the Brazilian states of Amazonas and Pará but extending into Peru, Colombia, Bolivia, and Venezuela — the dolphin emerges from the river at dusk and transforms into a tall, handsome, well-dressed young man. Almost always he wears a hat to conceal the blowhole that does not disappear with the transformation. He attends festas (riverside parties), dances exceptionally well, seduces a young woman, and returns to the water before sunrise. The folklore complex serves several social functions: it provides a culturally legible explanation for unwanted or unexplained pregnancies (a fatherless child is often called a 'filho do boto'), enforces taboos against entering the water alone between dusk and dawn, and frames the boto as one of many encantados — enchanted beings able to move between human and animal form. Within the broader encantado tradition the boto is also credited with controlling storms, causing illness or madness, and drawing humans into the underwater realm. The myth has direct conservation consequences: in some communities reverence and fear protect dolphins, while in others (notably documented since the 2000s in the upper Amazon) dolphin parts have been killed for use as piracatinga catfish bait or sold as love charms."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "'Boto' is the common Portuguese term for several South American river dolphins; 'cor-de-rosa' is Portuguese for 'pink-coloured', the diagnostic adult pigmentation of Inia geoffrensis. The term 'encantado' ('enchanted one') is the broader category to which the boto belongs in Amazonian folk religion.",
+      "meaning": "'Pink dolphin' / 'pink boto'. The pinkening of older adults is caused by abrasion-related scarring of the skin.",
+      "first_use": "Portuguese-language usage attested in Brazilian folklore collections from the 19th century onward."
     }
   },
+
   "classification": {
     "taxonomy": {
-      "category": "OF_AMAZONIAN_ENCHANTED_BEINGS",
-      "type": "Unknown",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "category": "SHAPESHIFTER",
+      "type": "Aquatic shapeshifter",
+      "subtype": "Cetacean encantado",
+      "variant": "Amazonian"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "encantado", "name": "Encantado", "relationship": "superset", "description": "Broader Amazonian category of enchanted shapeshifting beings; the boto is one type" },
+      { "id": "iara", "name": "Iara", "relationship": "related", "description": "Female water-spirit of Brazilian folklore who lures men into the river" },
+      { "id": "selkie", "name": "Selkie", "relationship": "similar", "description": "Scottish/Irish marine-mammal shapeshifter (seal to human)" },
+      { "id": "kelpie", "name": "Kelpie", "relationship": "similar", "description": "Scottish water-horse shapeshifter associated with drowning" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "height": { "min": 1.7, "max": 1.9, "unit": "meters", "confidence": "low" },
+      "coloration": ["pink (in dolphin form, intensifying with age)", "grey-pink", "human flesh tones (in transformed form)"],
+      "features": [
+        { "feature": "Persistent blowhole", "description": "In human form a hole or scar remains on the top of the head; almost universally concealed by a wide-brimmed white hat", "frequency": "always" },
+        { "feature": "Handsome appearance", "description": "Tall, charming, exceptionally well-dressed (often in a white suit) and an excellent dancer", "frequency": "always" },
+        { "feature": "Pink colouration in dolphin form", "description": "Adult Inia geoffrensis develop a pink hue from scar tissue accumulating with age", "frequency": "always" }
+      ],
+      "morphology": "In its animal form the boto is the freshwater cetacean Inia geoffrensis: an unfused-cervical-vertebra dolphin able to flex its neck, with a long beak, paddle-like flippers, and a low dorsal ridge. In transformed form it is described as an idealized human male; female-boto traditions, in which a woman emerges from the river to seduce men, are also recorded but rarer."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Shapeshifting", "description": "Transformation between dolphin and human form, typically at dusk and reverting at dawn", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Seduction", "description": "Charisma, dancing skill, and supernatural attractiveness used to seduce festa-goers", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Weather control", "description": "Believed to summon storms and disturb the river when angered", "frequency": "occasional", "evidence_level": "folklore" },
+      { "ability": "Causing illness or madness", "description": "Encantados, including the boto, are blamed for sudden illness, fevers, miscarriage, and mental disturbances", "frequency": "occasional", "evidence_level": "folklore" },
+      { "ability": "Underwater abduction", "description": "Reputed to draw humans (especially women) into an enchanted city beneath the river", "frequency": "rare", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "nocturnal",
+      "disposition": "curious",
+      "social_structure": "solitary",
+      "habitat_preference": ["Amazon river main stem", "tributaries (Rio Negro, Solimões, Madeira, Tapajós)", "flooded forest (várzea/igapó)", "lakes and oxbows"],
+      "diet": "Inia geoffrensis is piscivorous (fish, including armored catfish and piranha) and crustacean-feeding.",
+      "patterns": [
+        "Emerges from the river at dusk in human form",
+        "Attends riverside festas (community parties)",
+        "Wears a hat to hide the blowhole",
+        "Returns to the water before sunrise",
+        "Said to be especially active during the June Festas Juninas season"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "The folklore tracks the natural range of Inia geoffrensis: the Amazon and Orinoco basins of South America. The pink-river-dolphin shapeshifter is most strongly associated with the Brazilian Amazon, with parallel encantado traditions in the Peruvian, Colombian, Bolivian, and Venezuelan Amazon.",
+      "continents": ["South America"],
+      "countries": ["Brazil", "Peru", "Colombia", "Bolivia", "Venezuela", "Ecuador"],
+      "regions": [
+        "Amazon Basin",
+        "Orinoco Basin",
+        "Amazonas (Brazil)",
+        "Pará (Brazil)",
+        "Loreto (Peru)",
+        "Amazonas (Colombia)"
+      ]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Mid-Solimões / Tefé",
+        "location": {
+          "description": "Mamirauá Sustainable Development Reserve and surrounding várzea",
+          "country": "Brazil",
+          "region": "Amazonas",
+          "coordinates": { "latitude": -3.3667, "longitude": -64.7000 }
+        },
+        "peak_period": "Year-round; folklore most active in June festas season",
+        "notes": "Long-running site of dolphin ecological research and dense boto folklore."
+      },
+      {
+        "name": "Parintins",
+        "location": {
+          "description": "Tupinambarana Island, lower Amazon",
+          "country": "Brazil",
+          "region": "Amazonas",
+          "coordinates": { "latitude": -2.6283, "longitude": -56.7361 }
+        },
+        "peak_period": "June (Festival Folclórico de Parintins)",
+        "notes": "The annual Boi-Bumbá festival prominently features boto and other Amazonian folkloric figures."
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "19th century",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Brazilian folklore collections; oral tradition predates European contact"
+      },
+      "peak_activity_periods": [
+        { "period": "19th century–present", "description": "Continuous folkloric tradition documented in Portuguese-language ethnography" },
+        { "period": "1980s–present", "description": "Scholarly attention and conservation discussion (Slater, Cravalho)" }
+      ],
+      "seasonal_patterns": "Stories cluster around the June Festas Juninas, when riverside dances most plausibly draw a 'stranger in a white suit'."
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Indigenous Amazonian (Tupi, Tukano, Kokama, and others) cosmologies that frame the river as a populated otherworld; merged in the colonial era with Portuguese folklore traditions about enchanted strangers and water-spirits.",
+      "earliest_accounts": "Oral; written documentation begins with Brazilian folklore collectors of the 19th and early 20th centuries (e.g., Câmara Cascudo).",
+      "folklore_connections": "Part of the encantado complex; cognate with global water-shapeshifter traditions including the Scottish selkie, the Irish kelpie, and the Slavic rusalka."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "Pre-1500", "event": "Indigenous Amazonian traditions of dolphin-people and underwater enchanted cities", "significance": "Cultural baseline of the boto encantado complex", "source": "Oral tradition; later ethnography" },
+      { "date": "1954", "event": "Luís da Câmara Cascudo publishes 'Dicionário do Folclore Brasileiro', cataloguing boto entries", "significance": "Major reference text for Brazilian folklore including boto", "source": "Cascudo, L. C. (1954)" },
+      { "date": "1994", "event": "Candace Slater publishes 'Dance of the Dolphin: Transformation and Disenchantment in the Amazonian Imagination'", "significance": "Foundational English-language ethnography of boto folklore", "source": "University of Chicago Press" }
+    ],
+    "modern_era": "The boto myth survives strongly in contemporary Amazonia and has become a regional cultural icon — featured at the Festival de Parintins, in school curricula, and in conservation campaigning by groups such as the Mamirauá Institute and WWF. At the same time it intersects fraught conservation realities: in the upper Amazon piracatinga ('mota' catfish) fisheries, river dolphins have been killed for bait, prompting Brazilian fishing-moratorium decrees beginning in 2014."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -92,35 +175,121 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "boto-evidence-cascudo-1954",
+        "type": "folklore reference",
+        "name": "Dicionário do Folclore Brasileiro",
+        "date": "1954",
+        "description": "Reference entries on 'boto' and 'encantado' in Câmara Cascudo's encyclopedic dictionary of Brazilian folklore.",
+        "status": "verified",
+        "analysis": "Standard Brazilian folkloristic source.",
+        "source": "Cascudo, L. C. (1954)"
+      },
+      {
+        "id": "boto-evidence-slater-1994",
+        "type": "ethnography",
+        "name": "Dance of the Dolphin",
+        "date": "1994",
+        "description": "Book-length ethnographic study of boto folklore in the central Amazon by Candace Slater.",
+        "status": "verified",
+        "analysis": "Widely cited academic treatment of the boto as encantado.",
+        "source": "Slater, C. (1994)"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
+    "paranormal": [
+      {
+        "name": "Boto as encantado",
+        "description": "The traditional Amazonian view: the boto is one form of an encantado, an enchanted being that moves between the underwater otherworld and the world of humans.",
+        "proponents": ["Amazonian riverine communities", "Candace Slater (ethnographer of the tradition)"],
+        "evidence_cited": ["Continuous oral tradition", "Ritual practices around births and water taboos"]
+      }
+    ],
     "scientific": [],
-    "skeptical": []
+    "skeptical": [
+      {
+        "name": "Social-explanatory function",
+        "description": "Anthropologists analyse the myth as a culturally legible cover story for unwanted pregnancies and a vehicle for water-safety taboos in environments where drowning is common.",
+        "proponents": ["Candace Slater", "Mark Cravalho"],
+        "evidence_cited": ["Use of 'filho do boto' for fatherless children", "Geographic correlation of warnings with high-risk river crossings"]
+      },
+      {
+        "name": "Misperception of dolphin behaviour",
+        "description": "Inia geoffrensis is naturally curious, will approach swimmers, and surfaces audibly at night; cetologists argue these behaviours plausibly seed the human-encounter narrative.",
+        "proponents": ["Cetacean researchers (e.g., Vera da Silva, Mamirauá Institute)"],
+        "evidence_cited": ["Documented inquisitive behaviour of Inia toward boats and swimmers", "Acoustic surfacing at night"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Amazonian encantado complex",
+        "Festa-going boto in white suit and hat",
+        "Female-boto ('boto fêmea') variant who seduces men",
+        "Fatherless children called 'filhos do boto'"
+      ],
+      "stories": [
+        "The festa stranger who leaves before dawn",
+        "The young woman drawn into the underwater city",
+        "Origin stories of children attributed to the boto"
+      ],
+      "beliefs": "Many riverine communities forbid swimming alone at dusk or dawn, avoid eating boto meat, and treat the dolphin as a being deserving of caution and respect."
+    },
+    "indigenous": {
+      "cultures": ["Kokama", "Tukano", "Tikuna", "Tupinambá-descended caboclo communities"],
+      "significance": "The pink dolphin features in Indigenous and caboclo cosmologies as a being that crosses between the human world and the river otherworld; its protection is in some communities a culturally enforced norm.",
+      "sensitivity_note": "Encantado traditions are living religious frameworks for many Amazonian communities, not merely 'folklore'.",
+      "respect_guidelines": "Engage Indigenous and caboclo voices when documenting the tradition; distinguish ethnographic framings from sensationalised cryptid framings."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
+      "literature": [
+        "Dance of the Dolphin: Transformation and Disenchantment in the Amazonian Imagination — Candace Slater (1994)",
+        "Dicionário do Folclore Brasileiro — Luís da Câmara Cascudo (1954)"
+      ],
+      "film_tv": [
+        "Ele, o Boto (Brazilian film, 1987)",
+        "Recurring character in Brazilian telenovelas set in Amazonia"
+      ],
       "games": [],
-      "other": []
+      "music": [
+        "Boto cor-de-rosa figures recurrently in Brazilian regional music, including Boi-Bumbá songs at the Festival de Parintins"
+      ],
+      "other": [
+        "Festival Folclórico de Parintins (June, annually)",
+        "WWF and Mamirauá Institute conservation campaigns invoking boto folklore"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Luís da Câmara Cascudo", "affiliation": "Brazilian folklorist", "contribution": "Catalogued boto entries in the canonical 'Dicionário do Folclore Brasileiro'", "period": "1940s–1970s" },
+      { "name": "Candace Slater", "affiliation": "University of California, Berkeley", "contribution": "Ethnographic study of boto folklore in 'Dance of the Dolphin' (1994)", "period": "1980s–present" },
+      { "name": "Vera M. F. da Silva", "affiliation": "Mamirauá Institute / INPA", "contribution": "Cetacean biology of Inia geoffrensis; conservation research overlapping the folklore", "period": "1990s–present" }
+    ],
+    "organizations": [
+      { "name": "Mamirauá Sustainable Development Institute", "url": "https://www.mamiraua.org.br", "focus": "Amazon river dolphin research and community conservation" },
+      { "name": "WWF Brasil — Boto initiative", "url": "https://www.wwf.org.br", "focus": "Conservation of Amazon and Araguaian river dolphins" }
+    ],
+    "ongoing_studies": "Cetacean ecology and population studies of Inia geoffrensis, ethnographic work on encantado traditions, and applied research linking folkloric reverence to dolphin conservation outcomes."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "wikipedia-boto", "type": "website", "title": "Boto", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Boto", "accessed": "2026-05-07" },
+    { "id": "slater-1994", "type": "book", "title": "Dance of the Dolphin: Transformation and Disenchantment in the Amazonian Imagination", "authors": ["Candace Slater"], "publication": "University of Chicago Press", "date": "1994", "isbn": "978-0226761848" },
+    { "id": "cascudo-1954", "type": "book", "title": "Dicionário do Folclore Brasileiro", "authors": ["Luís da Câmara Cascudo"], "publication": "Instituto Nacional do Livro", "date": "1954" },
+    { "id": "wwf-amazon-river-dolphin", "type": "website", "title": "Amazon river dolphin (boto) — species page", "publication": "WWF", "url": "https://www.worldwildlife.org/species/amazon-river-dolphin", "accessed": "2026-05-07" }
+  ]
 }
